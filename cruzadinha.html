@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Cruzadinha - Arquitetura computacional</title>
+</head>
+<body>
+    <div class="body">
+        <h1>Palavras Cruzadas</h1>
+        <div class="cruzadinha">
+            <div id="id_reg" onclick="responder('reg')" class="palavra reg">
+                <div id="reg0" class="letra"></div>
+                <div id="reg1" class="letra"></div>
+                <div id="reg2" class="letra"></div>
+                <div id="reg3" class="letra"></div>
+                <div id="reg4" class="letra"></div>
+                <div id="reg5" class="letra"></div>
+                <div id="reg6" class="letra"></div>
+                <div id="reg7" class="letra"></div>
+                <div id="reg8" class="letra"></div>
+                <div id="reg9" class="letra"></div>
+                <div id="reg10" class="letra"></div>
+                <div id="reg11" class="letra"></div>
+                <div id="reg12" class="letra"></div>
+            </div>
+            <div id="id_cpu" onclick="responder('cpu')" class="palavra cpu">
+                <div id="cpu0" class="letra"></div>
+                <div id="cpu1" class="letra"></div>
+                <div id="cpu2" class="letra"></div>
+            </div>
+            <div id="id_ula" onclick="responder('ula')" class="palavra ula">
+                <div id="ula0" class="letra"></div>
+                <div id="ula1" class="letra"></div>
+                <div id="ula2" class="letra"></div>
+            </div>
+            <div id="id_ram" onclick="responder('ram')" class="palavra ram">
+                <div id="ram0" class="letra"></div>
+                <div id="ram1" class="letra"></div>
+                <div id="ram2" class="letra"></div>
+            </div>
+            <div id="id_rom" onclick="responder('rom')" class="palavra rom">
+                <div id="rom0" class="letra"></div>
+                <div id="rom1" class="letra"></div>
+                <div id="rom2" class="letra"></div>
+            </div>
+            <div id="id_eprom" onclick="responder('eprom')" class="palavra eprom">
+                <div id="eprom0" class="letra"></div>
+                <div id="eprom1" class="letra"></div>
+                <div id="eprom2" class="letra"></div>
+                <div id="eprom3" class="letra"></div>
+                <div id="eprom4" class="letra"></div>
+            </div>
+            <div id="id_flash" onclick="responder('flash')" class="palavra flash">
+                <div id="flash0" class="letra"></div>
+                <div id="flash1" class="letra"></div>
+                <div id="flash2" class="letra"></div>
+                <div id="flash3" class="letra"></div>
+                <div id="flash4" class="letra"></div>
+            </div>
+            <div id="id_ms" onclick="responder('ms')" class="palavra ms">
+                <div id="ms0" class="letra"></div>
+                <div id="ms1" class="letra"></div>
+                <div id="ms2" class="letra"></div>
+                <div id="ms3" class="letra"></div>
+                <div id="ms4" class="letra"></div>
+                <div id="ms5" class="letra"></div>
+                <div id="ms6" class="letra"></div>
+                <div id="ms7" class="letra"></div>
+                <div id="ms8" class="letra"></div>
+                <div id="ms9" class="letra"></div>
+                <div id="ms10" class="letra"></div>
+            </div>
+            <div id="id_dma" onclick="responder('dma')" class="palavra dma">
+                <div id="dma0" class="letra"></div>
+                <div id="dma1" class="letra"></div>
+                <div id="dma2" class="letra"></div>
+            </div>
+            <div id="id_cs" onclick="responder('cs')" class="palavra cs">
+                <div id="cs0" class="letra"></div>
+                <div id="cs1" class="letra"></div>
+            </div>
+            <div id="id_ab" onclick="responder('ab')" class="palavra ab">
+                <div id="ab0" class="letra"></div>
+                <div id="ab1" class="letra"></div>
+                <div id="ab2" class="letra"></div>
+                <div id="ab3" class="letra"></div>
+                <div id="ab4" class="letra"></div>
+                <div id="ab5" class="letra"></div>
+                <div id="ab6" class="letra"></div>
+                <div id="ab7" class="letra"></div>
+                <div id="ab8" class="letra"></div>
+            </div>
+            <div id="id_db" onclick="responder('db')" class="palavra db">
+                <div id="db0" class="letra"></div>
+                <div id="db1" class="letra"></div>
+                <div id="db2" class="letra"></div>
+                <div id="db3" class="letra"></div>
+                <div id="db4" class="letra"></div>
+                <div id="db5" class="letra"></div>
+                <div id="db6" class="letra"></div>
+            </div>
+            <div id="id_i5" onclick="responder('i5')" class="palavra i5">
+                <div id="i50" class="letra"></div>
+                <div id="i51" class="letra"></div>
+                <div id="i52" class="letra"></div>
+                <div id="i53" class="letra"></div>
+                <div id="i54" class="letra"></div>
+                <div id="i55" class="letra"></div>
+            </div>
+            <div id="id_i7" onclick="responder('i7')" class="palavra i7">
+                <div id="i70" class="letra"></div>
+                <div id="i71" class="letra"></div>
+                <div id="i72" class="letra"></div>
+                <div id="i73" class="letra"></div>
+                <div id="i74" class="letra"></div>
+            </div>
+            <div id="id_dc" onclick="responder('dc')" class="palavra dc">
+                <div id="dc0" class="letra"></div>
+                <div id="dc1" class="letra"></div>
+                <div id="dc2" class="letra"></div>
+                <div id="dc3" class="letra"></div>
+                <div id="dc4" class="letra"></div>
+                <div id="dc5" class="letra"></div>
+                <div id="dc6" class="letra"></div>
+                <div id="dc7" class="letra"></div>
+            </div>
+            <div id="id_qc" onclick="responder('qc')" class="palavra qc">
+                <div id="qc0" class="letra"></div>
+                <div id="qc1" class="letra"></div>
+                <div id="qc2" class="letra"></div>
+                <div id="qc3" class="letra"></div>
+                <div id="qc4" class="letra"></div>
+                <div id="qc5" class="letra"></div>
+                <div id="qc6" class="letra"></div>
+                <div id="qc7" class="letra"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <input class="inpC" type="text" oninput="mudar('reg')" id="id_reginput">
+            <input class="inpC" type="text" oninput="mudar('cpu')" id="id_cpuinput">
+            <input class="inpC" type="text" oninput="mudar('ula')" id="id_ulainput">
+            <input class="inpC" type="text" oninput="mudar('ram')" id="id_raminput">
+            <input class="inpC" type="text" oninput="mudar('rom')" id="id_rominput">
+            <input class="inpC" type="text" oninput="mudar('eprom')" id="id_eprominput">
+            <input class="inpC" type="text" oninput="mudar('flash')" id="id_flashinput">
+            <input class="inpC" type="text" oninput="mudar('ms')" id="id_msinput">
+            <input class="inpC" type="text" oninput="mudar('dma')" id="id_dmainput">
+            <input class="inpC" type="text" oninput="mudar('cs')" id="id_csinput">
+            <input class="inpC" type="text" oninput="mudar('ab')" id="id_abinput">
+            <input class="inpC" type="text" oninput="mudar('db')" id="id_dbinput">
+            <input class="inpC" type="text" oninput="mudar('i5')" id="id_i5input">
+            <input class="inpC" type="text" oninput="mudar('i7')" id="id_i7input">
+            <input class="inpC" type="text" oninput="mudar('dc')" id="id_dcinput">
+            <input class="inpC" type="text" oninput="mudar('qc')" id="id_qcinput">
+        </div>
+        <h2 style="color: white;
+        text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black, 2px 2px 2px rgba(0,0,0,0);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Palavras:</h2>
+        <div class="dicas">
+            <div class="cont">
+                <span id="id_cpuresp">CPU</span><br>
+                <span id="id_ularesp">ULA</span><br>
+                <span id="id_regresp">Registradores</span><br>
+                <span id="id_ramresp">RAM</span><br>
+                <span id="id_romresp">ROM</span><br>
+                <span id="id_epromresp">Eprom</span><br>
+                <span id="id_flashresp">Flash</span><br>
+                <span id="id_msresp">MassStorage</span><br>
+            </div>
+            <div class="cont">
+                <span id="id_dmaresp">DMA</span><br>
+                <span id="id_csresp">CS</span><br>
+                <span id="id_abresp">AdressBus</span><br>
+                <span id="id_dbresp">DataBus</span><br>
+                <span id="id_i5resp">ICinco</span><br>
+                <span id="id_i7resp">ISete</span><br>
+                <span id="id_dcresp">DualCore</span><br>
+                <span id="id_qcresp">QuadCore</span><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
